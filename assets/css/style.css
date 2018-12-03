@@ -1,10 +1,11 @@
 .body {
-    background-image: url("giphy.gif");
+    background-image: url("harry.jpg");
     background-repeat: no-repeat;
+    background-size: auto;
 
 }
 .blinking{
-    animation:blinkingText 1.5s infinite;
+    animation:blinkingText 2s infinite;
 }
 @keyframes blinkingText{
     0%{     color: #ccc;    }
