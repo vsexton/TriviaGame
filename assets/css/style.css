@@ -1,7 +1,8 @@
 .body {
-    background-image: url("harry.jpg");
+    background-image: url("harry&.jpg");
     background-repeat: no-repeat;
     background-size: auto;
+    color: white;
 
 }
 .blinking{
