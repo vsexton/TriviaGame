@@ -44,7 +44,7 @@ $("#sub-wrapper").on('click', "#done", function() {
 // Set up questions array
 var questions = [{
     question: "What is Hermione's middle name?",
-    answers: ["A Jane", "Rachel", "Sarah", "Jean"],
+    answers: ["Jane", "Rachel", "Sarah", "Jean"],
     correctAnswer: "Jane"
 }, {
     question: "Who was Harry's third Defence Against the Dark Arts teacher?",
@@ -71,13 +71,13 @@ var questions = [{
 }, {
 
     question: "What is the name of Fred and George's joke shop?",
-    answers: ["Weasley Joke Emporium", "Weasleys' Wizard Wheezes", "Gred & George's Wonder Emporium", "Zonko's Joke Shop"],
+    answers: ["Weasley Joke Emporium", "Weasley's Wizard Wheezes", "Gred & George's Wonder Emporium", "Zonko's Joke Shop"],
     correctAnswer: "Weasley's Wizard Wheezes"
 }, {
 
     question: "Which of these is NOT one of the Unforgivable Curses?",
-    answers: ["Cruciatus Curse", "Imperius curse", "Sectumsempra", "Avada Kedavra"],
-    correctAnswer: "Sectumsempraf"
+    answers: ["Cruciatus Curse", "Imperius Curse", "Sectumsempra", "Killing Curse"],
+    correctAnswer: "Sectumsempra"
 }, {
 
     question: "Who played Lord Voldemort in the movies?",
@@ -201,14 +201,14 @@ var game = {
     result: function () {
         // clear the timer 
         clearInterval(timer);
-    }
+    
          //Remove all the questions and answers HTML
-        //$('#questions h2').remove();
-        //$('#questions').html("<h2>All done!</h2>");
-        //$('#answers').append("<h3>Correct Answers: " + this.correct + "</h3>");
-      // $('#sub-wrapper').append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
-     //  $('#sub-wrapper').append("<h3>Unanswered Questions: " + (questions.length-(this.incorrect+this.correct)) + "</h3>");
-
+        $('#questions h2').remove();
+        $('#questions').html("<h2>All done!</h2>");
+        $('#answers').append("<h3>Correct Answers: " + this.correct + "</h3>");
+         $('#sub-wrapper').append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
+         $('#sub-wrapper').append("<h3>Unanswered Questions: " + (questions.length-(this.incorrect+this.correct)) + "</h3>");
+    }
 //}),
        // $('questions.answers').each(function () {
           //}  $(this).remove();
