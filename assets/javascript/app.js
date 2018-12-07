@@ -201,11 +201,39 @@ var game = {
     result: function () {
         // clear the timer 
         clearInterval(timer);
-        // Remove all the questions and answers HTML
-
-        // Append correct answers and incorrect answers to HTML (use this.correct and this.incorrect)
-
-        // Append unanswered questions
     }
-};
-})
+         //Remove all the questions and answers HTML
+        //$('#questions h2').remove();
+        //$('#questions').html("<h2>All done!</h2>");
+        //$('#answers').append("<h3>Correct Answers: " + this.correct + "</h3>");
+      // $('#sub-wrapper').append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
+     //  $('#sub-wrapper').append("<h3>Unanswered Questions: " + (questions.length-(this.incorrect+this.correct)) + "</h3>");
+
+//}),
+       // $('questions.answers').each(function () {
+          //}  $(this).remove();
+       // });,
+        // Append correct answers and incorrect answers to HTML (use this.correct and this.incorrect)
+        //function getScore(){
+           // var score=0;
+            //var numQuestions=10;
+            
+            //for (var i=0;i<numQuestions;i++){
+            //if (userInput[i]==answers[i]){
+           // score += 1;
+            //}
+            //else{
+            //score += 0;
+            //}
+            
+           // }
+            //return score;
+            //}
+            //function returnScore(){
+            //alert("Your score is "+getScore()+"/10");
+            //}
+        // Append unanswered questions
+    //}
+//};
+//})
+}})
