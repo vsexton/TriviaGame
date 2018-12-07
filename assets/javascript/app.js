@@ -204,8 +204,8 @@ var game = {
     
          //Remove all the questions and answers HTML
         $('#questions h2').remove();
-        $('#questions').html("<h2>All done!</h2>");
-        $('#answers').append("<h3>Correct Answers: " + this.correct + "</h3>");
+        $('#sub-wrapper').html("<h2>All done!</h2>");
+        $('#sub-wrapper').append("<h3>Correct Answers: " + this.correct + "</h3>");
          $('#sub-wrapper').append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
          $('#sub-wrapper').append("<h3>Unanswered Questions: " + (questions.length-(this.incorrect+this.correct)) + "</h3>");
     }
