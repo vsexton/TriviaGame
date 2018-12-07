@@ -94,7 +94,7 @@ var timer;
 var game = {
     correct: 0,
     incorrect: 0,
-    counter: 100,
+    counter: 60,
     countdown: function () {
         // Tell the counter to count down
         game.counter--;
