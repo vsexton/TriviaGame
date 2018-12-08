@@ -110,7 +110,7 @@ var game = {
         // Tell timer to countdown every 1 second
         timer = setInterval(game.countdown, 1000);
         // Put the timer in our HTML
-        $("#sub-wrapper").prepend("<h2>Time remaining: <span id='counter'>120</span></h2>");
+        $("#sub-wrapper").prepend("<h2>Time remaining: <span id='counter'>60</span></h2>");
         // Make start button disappear
         $("#start").remove();
 
